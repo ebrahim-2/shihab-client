@@ -34,7 +34,7 @@ export function Section({
   methods,
   title = 'Manage the job',
   imgUrl = `${CONFIG.site.basePath}/assets/illustrations/illustration-dashboard.webp`,
-  subtitle = 'More effectively with optimized workflows.',
+  subtitle = 'An AI-driven platform that transforms your data into clear insights, empowering you to make data-informed decisions with ease.',
   ...other
 }: SectionProps) {
   const theme = useTheme();
