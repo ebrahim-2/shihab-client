@@ -122,7 +122,7 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
           </Stack>
 
           <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center" sx={{ p: 3 }}>
-            {[...Array(3)].map((_, index) => (
+            {/* {[...Array(3)].map((_, index) => (
               <Tooltip
                 key={_mock.fullName(index + 1)}
                 title={`Switch to: ${_mock.fullName(index + 1)}`}
@@ -133,9 +133,9 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
                   onClick={() => {}}
                 />
               </Tooltip>
-            ))}
+            ))} */}
 
-            <Tooltip title="Add account">
+            {/* <Tooltip title="Add account">
               <IconButton
                 sx={{
                   bgcolor: varAlpha(theme.vars.palette.grey['500Channel'], 0.08),
@@ -144,10 +144,10 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
               >
                 <Iconify icon="mingcute:add-line" />
               </IconButton>
-            </Tooltip>
+            </Tooltip> */}
           </Stack>
 
-          <Stack
+          {/* <Stack
             sx={{
               py: 3,
               px: 2.5,
@@ -185,11 +185,11 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
                 </MenuItem>
               );
             })}
-          </Stack>
+          </Stack> */}
 
-          <Box sx={{ px: 2.5, py: 3 }}>
+          {/* <Box sx={{ px: 2.5, py: 3 }}>
             <UpgradeBlock />
-          </Box>
+          </Box> */}
         </Scrollbar>
 
         <Box sx={{ p: 2.5 }}>

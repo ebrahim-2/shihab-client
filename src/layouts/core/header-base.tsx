@@ -139,7 +139,7 @@ export function HeaderBase({
             <StyledDivider data-slot="divider" />
 
             {/* -- Workspace popover -- */}
-            {workspaces && <WorkspacesPopover data-slot="workspaces" data={data?.workspaces} />}
+            {/* {workspaces && <WorkspacesPopover data-slot="workspaces" data={data?.workspaces} />} */}
 
             {slots?.leftAreaEnd}
           </>
@@ -157,7 +157,7 @@ export function HeaderBase({
               }}
             >
               {/* -- Help link -- */}
-              {helpLink && (
+              {/* {helpLink && (
                 <Link
                   data-slot="help-link"
                   href={paths.faqs}
@@ -167,21 +167,21 @@ export function HeaderBase({
                 >
                   Need help?
                 </Link>
-              )}
+              )} */}
 
               {/* -- Searchbar -- */}
-              {searchbar && <Searchbar data-slot="searchbar" data={data?.nav} />}
+              {/* {searchbar && <Searchbar data-slot="searchbar" data={data?.nav} />} */}
 
               {/* -- Language popover -- */}
-              {localization && <LanguagePopover data-slot="localization" data={data?.langs} />}
+              {/* {localization && <LanguagePopover data-slot="localization" data={data?.langs} />} */}
 
               {/* -- Notifications popover -- */}
-              {notifications && (
+              {/* {notifications && (
                 <NotificationsDrawer data-slot="notifications" data={data?.notifications} />
-              )}
+              )} */}
 
               {/* -- Contacts popover -- */}
-              {contacts && <ContactsPopover data-slot="contacts" data={data?.contacts} />}
+              {/* {contacts && <ContactsPopover data-slot="contacts" data={data?.contacts} />} */}
 
               {/* -- Settings button -- */}
               {settings && <SettingsButton data-slot="settings" />}
