@@ -89,7 +89,7 @@ export function ChatView() {
           main: (
             <>
               <ChatMessageList messages={data ?? []} isLoading={isLoading} />
-              {data === undefined && (
+              {data === undefined && isLoading === false && (
                 <EmptyContent
                   title="No messages until now!"
                   description="Write something awesome..."

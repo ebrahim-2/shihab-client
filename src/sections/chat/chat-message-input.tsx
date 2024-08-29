@@ -43,7 +43,7 @@ export function ChatMessageInput({
   const messageData = () => {
     if (selectedConversationId) {
       return {
-        messagePollId: selectedConversationId,
+        messages_poll_id: selectedConversationId,
         message,
       };
     }
@@ -84,7 +84,7 @@ export function ChatMessageInput({
             await sendMessageMutation.mutate(messageData(), {
               onSuccess: (res) => {
                 queryClient.invalidateQueries({ queryKey: ['messages'] });
-                setConversationId(res.data[0].messagePollId);
+                setConversationId(res.data[0]['messages_poll_id']);
               },
             });
 
